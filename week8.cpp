@@ -1,6 +1,5 @@
 #include <jni.h>
 
-// Calculate the mean of an array of integers
 extern "C"
 JNIEXPORT jdouble JNICALL Java_TextMenu_calculateMean(JNIEnv *env, jclass cls, jintArray arr)
 {
@@ -17,7 +16,6 @@ JNIEXPORT jdouble JNICALL Java_TextMenu_calculateMean(JNIEnv *env, jclass cls, j
     return sum / len;
 }
 
-// Calculate the standard deviation of an array of integers
 extern "C"
 JNIEXPORT jdouble JNICALL Java_TextMenu_calculateSTDDev(JNIEnv *env, jclass cls, jintArray arr)
 {
