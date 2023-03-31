@@ -1,5 +1,6 @@
 import java.util.*;
 
+
 public class week8 {
     
     static {
@@ -22,10 +23,13 @@ public class week8 {
             numbers[i] = rand.nextInt(101);
         }
         
+        long timeBefore = System.currentTimeMillis();
         double mean = calculateMean(numbers);
         double stddev = calculateSTDDev(numbers);
+        long timeAfter = System.currentTimeMillis();
         
         System.out.printf("Mean: %.2f\n", mean);
         System.out.printf("Standard Deviation: %.2f\n", stddev);
+        System.out.println("Time taken: " + (timeAfter - timeBefore) + " milliseconds");
     }
 }
